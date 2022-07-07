@@ -8,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirstTest {
 	@Test
-	void first() throws InterruptedException {
+	public void TestGoogle() throws InterruptedException {
 		System.out.println("Ravi");
 		WebDriverManager.chromedriver().setup();
 		WebDriver Driver = new ChromeDriver();
@@ -21,5 +21,24 @@ public class FirstTest {
 		
 			
 	}
-
+	@Test
+	public void TestFacebook() throws InterruptedException {
+		System.out.println("Ravi");
+		WebDriverManager.chromedriver().setup();
+		WebDriver Driver = new ChromeDriver();
+		Driver.manage().window().maximize();
+		Driver.get("https://www.facebook.com/");
+		
+		System.out.println(Driver.getTitle());
+		Thread.sleep(4000);
+		Driver.close();
+	
+	}
+	@Test
+	public void LounchDriver() throws InterruptedException {
+		System.out.println("Ravi");
+		WebDriverManager.chromedriver().setup();
+		WebDriver Driver = new ChromeDriver();
+		Driver.manage().window().maximize();
+	}
 }
