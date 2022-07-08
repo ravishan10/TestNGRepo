@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ravi.testng.OrangeTestNG">
+      <class name="com.ravi.testng.Asserts">
         <methods>
-          <include name="EnterLoginDetails"/>
-          <include name="NavigateToMyInfo"/>
-          <include name="VerifyLogin"/>
+          <include name="softAsst"/>
         </methods>
-      </class> <!-- com.ravi.testng.OrangeTestNG -->
+      </class> <!-- com.ravi.testng.Asserts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
