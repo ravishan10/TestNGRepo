@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ravi.testng.Asserts">
+      <class name="com.ravi.testng.FirstTest">
         <methods>
-          <include name="softAsst"/>
+          <include name="TestFacebook"/>
         </methods>
-      </class> <!-- com.ravi.testng.Asserts -->
+      </class> <!-- com.ravi.testng.FirstTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

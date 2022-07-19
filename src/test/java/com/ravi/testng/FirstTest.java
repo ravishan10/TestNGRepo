@@ -11,8 +11,10 @@ public class FirstTest {
 	@Test
 	public void TestGoogle() throws InterruptedException {
 		System.out.println("Ravi");
-		WebDriverManager.chromedriver().setup();
 		WebDriver Driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\chromedriver_win32//chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
+		//WebDriver Driver = new ChromeDriver();
 		Driver.manage().window().maximize();
 		Driver.get("https://www.google.com/");
 		
@@ -40,7 +42,7 @@ public class FirstTest {
 		Driver.close();
 	
 	}
-	@Test
+	@Test(groups= {"smoke"})
 	public void LounchDriver() throws InterruptedException {
 		System.out.println("Ravi");
 		WebDriverManager.chromedriver().setup();

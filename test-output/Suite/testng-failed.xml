@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="OrangeHRMLoginTest(failed)">
+  <test thread-count="5" name="SmokeTesting(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="com.ravi.testng.OrangeTestNG">
         <methods>
-          <include name="NavigateToMyInfo"/>
+          <include name="EnterLoginDetails"/>
         </methods>
       </class> <!-- com.ravi.testng.OrangeTestNG -->
     </classes>
-  </test> <!-- OrangeHRMLoginTest(failed) -->
+  </test> <!-- SmokeTesting(failed) -->
 </suite> <!-- Failed suite [Suite] -->
